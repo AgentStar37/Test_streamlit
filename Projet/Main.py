@@ -11,7 +11,7 @@ flight_hight_data={
 graph_height=pd.DataFrame(flight_hight_data,index=["0mn","1mn","2mn","3mn","4mn","5mn","6mn","7mn","8mn"])
 
 flight_speed_data={
-    "Vitesse (en km/h)":[0,80,112,150,175,180,183,185,176,200]
+    "Vitesse (en km/h)":[0,80,112,150,175,180,177,156,192]
 }
 graph_speed=pd.DataFrame(flight_speed_data,index=["0mn","1mn","2mn","3mn","4mn","5mn","6mn","7mn","8mn"])
 
