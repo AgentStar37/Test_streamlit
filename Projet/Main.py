@@ -28,6 +28,7 @@ st.set_page_config(
 #--------------------------------------
 
 from fonctions import *
+f()
 
 st.title('Votre compte rendu de vol')
 

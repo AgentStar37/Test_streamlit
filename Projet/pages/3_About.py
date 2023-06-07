@@ -8,6 +8,7 @@ st.set_page_config(
 #--------------------------------------
 
 from ..fonctions import *
+f()
 
 st.title("A propos de cette application")
 

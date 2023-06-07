@@ -1,7 +1,7 @@
 import streamlit as st
 
-
-st.markdown(
+def f():
+    st.markdown(
     """
     <style>
         [data-testid="stSidebarNav"] {
@@ -21,4 +21,4 @@ st.markdown(
     unsafe_allow_html=True,
     )
 
-st.sidebar.divider()
+    st.sidebar.divider()
