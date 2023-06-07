@@ -23,12 +23,29 @@ dataframe_speed=pd.DataFrame(flight_speed_data,index=["0mn","1mn","2mn","3mn","4
 #--------------------------------------
 st.set_page_config(
     page_title="Compte rendu de vol",
-    page_icon="✈",
+    page_icon="🛩",
     )
 #--------------------------------------
 
-st.sidebar.write("Menu des pages d'information")
-st.sidebar.divider()
+def add_logo():
+    st.markdown(
+        """
+        <style>
+            [data-testid="stSidebarNav"]::before {
+                content: "🛩
+                Menu des pages de l'appli
+                -------------------------------------
+                ";
+                margin-left: 20px;
+                margin-top: 20px;
+                font-size: 30px;
+                position: relative;
+                top: 100px;
+            }
+        </style>
+        """,
+        unsafe_allow_html=True,
+    )
 
 st.title('Votre compte rendu de vol')
 
