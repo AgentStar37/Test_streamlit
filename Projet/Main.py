@@ -20,6 +20,12 @@ flight_speed_data={
 }
 dataframe_speed=pd.DataFrame(flight_speed_data,index=["0mn","1mn","2mn","3mn","4mn","5mn","6mn","7mn","8mn"])
 
+#--------------
+st.set_page_config(
+    page_title="Compte rendu de vol",
+    page_icon=":plane:"
+    )
+#--------------
 st.title('Votre compte rendu de vol')
 
 st.map(dataframe_map)
