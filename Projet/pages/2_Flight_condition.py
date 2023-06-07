@@ -19,6 +19,8 @@ st.set_page_config(
     )
 #--------------------------------------
 
+from fonctions import *
+
 st.title("Conditions de vol:")
 
 st.subheader(f"Vous pilotiez un **{avion_random}**")

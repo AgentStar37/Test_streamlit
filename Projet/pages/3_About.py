@@ -7,6 +7,8 @@ st.set_page_config(
     )
 #--------------------------------------
 
+from fonctions import *
+
 st.title("A propos de cette application")
 
 st.write("Cette application a été réalisée au cours d'un stage par un étudiant à Polytech Tours")
