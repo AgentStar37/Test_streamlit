@@ -23,7 +23,8 @@ dataframe_speed=pd.DataFrame(flight_speed_data,index=["0mn","1mn","2mn","3mn","4
 #--------------
 st.set_page_config(
     page_title="Compte rendu de vol",
-    page_icon="✈"
+    page_icon="✈",
+    layout="centered"
     )
 #--------------
 st.title('Votre compte rendu de vol')
