@@ -6,7 +6,7 @@ st.title("Conditions de vol:")
 
 
 flight_temp_data={
-    "Vitesse (en km/h)":["22°C","21°C","18°C","16°C","15°C","15°C","15°C","14°C","12°C"]
+    "Vitesse (en km/h)":[22,21,18,16,15,15,15,14,12]
 }
 dataframe_temp=pd.DataFrame(flight_temp_data,index=["0mn","1mn","2mn","3mn","4mn","5mn","6mn","7mn","8mn"])
 
