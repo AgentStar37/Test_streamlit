@@ -8,11 +8,9 @@ for i in range(8):
     st.text("")
 
 st.divider()
-
-def note_given(note):
-    st.write(f"Vous avez donné une note de **{note}** à l'application. Merci de votre retour !")
+    
 
 st.write("Etes vous satisfait de l'application ?")
-note = st.slider("Donnez une note !",0,5, on_change=note_given())
-
+note = st.slider("Donnez une note !",0,5)
+st.write(f"Vous avez donné une note de **{note}** à l'application. Merci de votre retour !")
 st.divider()
