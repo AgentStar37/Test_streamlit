@@ -27,6 +27,9 @@ st.set_page_config(
     )
 #--------------------------------------
 
+st.sidebar.write("Menu des pages d'information")
+st.sidebar.divider()
+
 st.title('Votre compte rendu de vol')
 
 st.map(dataframe_map)
