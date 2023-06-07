@@ -31,10 +31,13 @@ st.markdown(
     """
     <style>
         [data-testid="stSidebarNav"] {
-            content: "🛩
-            Menu des pages de l'appli
-            -------------------------------------
-            ";
+            background-image: url(Projet/pages/Assets/daher.jpg);
+            background-repeat: no-repeat;
+            padding-top: 120px;
+            background-position: 20px 20px;
+        }
+        [data-testid="stSidebarNav"]::before {
+            content: "Menu des pages de l'appli";
             margin-left: 20px;
             margin-top: 20px;
             font-size: 30px;
