@@ -31,7 +31,7 @@ st.markdown(
     """
     <style>
         [data-testid="stSidebarNav"] {
-            padding-top: 100px;
+            padding-top: 120px;
             background-position: 20px 20px;
         }
         [data-testid="stSidebarNav"]::before {
@@ -40,7 +40,7 @@ st.markdown(
             margin-top: 20px;
             font-size: 20px;
             position: relative;
-            top: 100px;
+            top: 70px;
         }
     </style>
     """,
