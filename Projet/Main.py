@@ -48,7 +48,6 @@ st.markdown(
     )
 
 st.sidebar.divider()
-st.sidebar.divider()
 
 st.title('Votre compte rendu de vol')
 
