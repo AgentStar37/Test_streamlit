@@ -19,7 +19,7 @@ st.set_page_config(
     )
 #--------------------------------------
 
-from fonctions import *
+from ..fonctions import *
 
 st.title("Conditions de vol:")
 
