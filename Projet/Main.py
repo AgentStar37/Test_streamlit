@@ -31,7 +31,7 @@ st.markdown(
     """
     <style>
         [data-testid="stSidebarNav"] {
-            padding-top: 120px;
+            padding-top: 150px;
             background-position: 20px 20px;
         }
         [data-testid="stSidebarNav"]::before {
