@@ -35,7 +35,7 @@ st.markdown(
             background-position: 20px 20px;
         }
         [data-testid="stSidebarNav"]::before {
-            content: "Menu des pages de l'appli";
+            content: "Menu des pages de l'appli 1 2 3 4 5 6 7 8 9 10 11 12";
             margin-left: 20px;
             margin-top: 20px;
             font-size: 20px;
