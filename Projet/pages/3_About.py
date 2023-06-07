@@ -6,6 +6,8 @@ st.write("Cette application a été réalisée au cours d'un stage par un étudi
 
 st.text("""
         
+
+
         """)
 
 st.write("Etes vous satisfait de l'application ?")
