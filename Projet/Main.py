@@ -22,7 +22,7 @@ dataframe_speed=pd.DataFrame(flight_speed_data,index=["0mn","1mn","2mn","3mn","4
 
 st.title('Votre compte rendu de vol')
 
-st.write(dataframe_map)
+st.map(dataframe_map)
 
 
 
