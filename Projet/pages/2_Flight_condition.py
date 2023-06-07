@@ -15,5 +15,5 @@ avion_random=choice(avions)
 st.write(f"Vous pilotiez un **{avion_random}**")
 st.image("Projet/pages/Assets/"+avion_random+".jpg")
 
-st.subheader("Température à l'altitude de l'avion au cours du vol")
+st.subheader("Température à l'altitude de l'avion au cours du vol en degrés Celsius")
 st.line_chart(dataframe_temp)
