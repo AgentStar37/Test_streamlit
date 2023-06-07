@@ -47,7 +47,7 @@ st.markdown(
     unsafe_allow_html=True,
     )
 
-st.sidebar.write("------------------------------------------------")
+st.sidebar.write("------------------------------------------")
 
 st.title('Votre compte rendu de vol')
 
