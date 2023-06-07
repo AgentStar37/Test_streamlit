@@ -47,7 +47,6 @@ st.markdown(
     unsafe_allow_html=True,
     )
 
-st.sidebar.divider()
 
 st.title('Votre compte rendu de vol')
 
