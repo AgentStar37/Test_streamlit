@@ -24,10 +24,12 @@ st.title('Votre compte rendu de vol')
 
 st.map(dataframe_map)
 
-
+st.divider()
 
 st.subheader("Voici le graphique de votre altitude au cours du vol")
 st.area_chart(dataframe_height)
+
+st.divider()
 
 st.subheader("Voici le graphique de votre vitesse au cours du vol")
 st.line_chart(dataframe_speed)

@@ -7,6 +7,8 @@ st.write("Cette application a été réalisée au cours d'un stage par un étudi
 for i in range(8):
     st.text("")
 
+st.divider()
 st.write("Etes vous satisfait de l'application ?")
 note = st.slider("Donnez une note !",0,5)
 st.write(f"Vous avez donné une note de **{note}** à l'application. Merci de votre retour !")
+st.divider()

@@ -12,8 +12,10 @@ dataframe_temp=pd.DataFrame(flight_temp_data,index=["0mn","1mn","2mn","3mn","4mn
 
 avions=["tbm 900", "tbm 940","tbm 960"]
 avion_random=choice(avions)
-st.write(f"Vous pilotiez un **{avion_random}**")
+st.subheader(f"Vous pilotiez un **{avion_random}**")
 st.image("Projet/pages/Assets/"+avion_random+".jpg")
+
+st.divider()
 
 st.subheader("Température à l'altitude de l'avion au cours du vol en degrés Celsius")
 st.line_chart(dataframe_temp)
