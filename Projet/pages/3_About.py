@@ -1,11 +1,11 @@
 import streamlit as st
 
-#--------------
+#--------------------------------------
 st.set_page_config(
     page_title="Compte rendu de vol",
     page_icon="✈",
     )
-#--------------
+#--------------------------------------
 
 st.title("A propos de cette application")
 
@@ -15,7 +15,6 @@ for i in range(8):
     st.text("")
 
 st.divider()
-    
 
 st.write("Etes vous satisfait de l'application ?")
 note = st.slider("Donnez une note !",0,5)
