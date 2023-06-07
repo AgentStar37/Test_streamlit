@@ -30,7 +30,7 @@ st.set_page_config(
 st.markdown(
     """
     <style>
-        [data-testid="stSidebarNav"]::before {
+        [data-testid="stSidebarNav"] {
             content: "🛩
             Menu des pages de l'appli
             -------------------------------------
