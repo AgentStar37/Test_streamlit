@@ -6,6 +6,12 @@ st.write("Cette application a été réalisée au cours d'un stage par un étudi
 
 st.text("")
 st.text("")
+st.text("")
+st.text("")
+st.text("")
+st.text("")
+st.text("")
+st.text("")
 
 st.write("Etes vous satisfait de l'application ?")
 note = st.slider("Donnez une note !",0,5)
