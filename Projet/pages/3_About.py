@@ -1,5 +1,12 @@
 import streamlit as st
 
+#--------------
+st.set_page_config(
+    page_title="Compte rendu de vol",
+    page_icon="✈",
+    )
+#--------------
+
 st.title("A propos de cette application")
 
 st.write("Cette application a été réalisée au cours d'un stage par un étudiant à Polytech Tours")
