@@ -44,7 +44,7 @@ for i in range(8):
     st.text("")
 
 countries = st.multiselect("Nombre de TBM achetés par pays",options=["France","USA","Suisse","Angleterre","Espagne"],default=["France","USA","Suisse","Angleterre","Espagne"])
-countries_dataframe=pd.DataFrame(pays_nb_tbm_dict[countries],index=countries)
+countries_dataframe=pd.DataFrame(pays_nb_tbm_dict,index=countries)
 st.bar_chart(countries_dataframe)
 
 st.divider()
