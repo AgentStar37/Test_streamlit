@@ -49,7 +49,7 @@ st.divider()
 
 st.subheader("Température à l'altitude de l'avion au cours du vol en degrés Celsius")
 
-time_temp=st.slider(label="Selectionner le temps lors du vol",options=["0mn","1mn","2mn","3mn","4mn","5mn","6mn","7mn","8mn"])
+time_temp=st.select_slider(label="Selectionner le temps lors du vol",options=["0mn","1mn","2mn","3mn","4mn","5mn","6mn","7mn","8mn"])
 old_time_temp = time_temp
 st.metric(label="Température au niveau de l'avion à ce moment",value=str(temp_time_dict[time_temp])+" °C")
 while time_temp !=old_time_temp:
