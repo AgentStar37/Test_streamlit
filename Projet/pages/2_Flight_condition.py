@@ -4,7 +4,7 @@ import streamlit as st
 
 #|----------------------------------------------------------------------------------------------------|#
 flight_temp_data={
-    "Température (en °C)":[22,21,18,16,15,15,15,14,12]
+    "Température (en °C)":[st.metric(value="22 °C"),st.metric(value="21 °C", delta="-1 °C"),st.metric(value="18 °C", delta="-3 °C"),st.metric(value="16 °C", delta="-2 °C"),st.metric(value="15 °C", delta="-1 °C"),st.metric(value="15 °C"),st.metric(value="14 °C", delta="-1 °C"),st.metric(value="12 °C", delta="-2 °C")]
 }
 dataframe_temp=pd.DataFrame(flight_temp_data,index=["0mn","1mn","2mn","3mn","4mn","5mn","6mn","7mn","8mn"])
 
