@@ -1,4 +1,5 @@
 import streamlit as st
+import pandas as pd
 
 #--------------------------------------
 st.set_page_config(
@@ -6,6 +7,12 @@ st.set_page_config(
     page_icon="🛩",
     )
 #--------------------------------------
+
+#|----------------------------------------------------------------------------------------------------|#
+pays_nb_tbm_dict={
+    "France":38,"USA":120,"Suisse":18,"Angleterre":22,"Espagne":21
+}
+#|----------------------------------------------------------------------------------------------------|#
 
 st.markdown(
     """
@@ -35,6 +42,10 @@ st.write("Cette application a été réalisée au cours d'un stage par un étudi
 
 for i in range(8):
     st.text("")
+
+countries = st.multiselect("Nombre de TBM achetés par pays",options=["France","USA","Suisse","Angleterre","Espagne"],default=["France","USA","Suisse","Angleterre","Espagne"])
+countries_dataframe=pd.DataFrame(pays_nb_tbm_dict[countries],index=countries)
+st.bar_chart(countries_dataframe)
 
 st.divider()
 
