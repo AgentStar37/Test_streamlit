@@ -10,8 +10,9 @@ st.set_page_config(
 
 #|----------------------------------------------------------------------------------------------------|#
 pays_nb_tbm_dict={
-    "Ventes de TBM":[38,120,18,22,21]
+    "France":38,"USA":120,"Suisse":18,"Angleterre":22,"Espagne":21
 }
+
 #|----------------------------------------------------------------------------------------------------|#
 
 st.markdown(
@@ -44,6 +45,9 @@ for i in range(8):
     st.text("")
 
 countries = st.multiselect("Nombre de TBM achetés par pays",options=["France","USA","Suisse","Angleterre","Espagne"],default=["France","USA","Suisse","Angleterre","Espagne"])
+nb_tbm_dict={
+    "Ventes de TBM": pays_nb_tbm_dict[country] for country in countries
+}
 countries_dataframe=pd.DataFrame(pays_nb_tbm_dict,index=countries)
 st.bar_chart(countries_dataframe)
 
