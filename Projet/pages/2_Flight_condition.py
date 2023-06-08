@@ -4,7 +4,7 @@ import streamlit as st
 
 #|----------------------------------------------------------------------------------------------------|#
 temp_time_dict={
-    "0mn":st.metric(value="22 °C"),"1mn":st.metric(value="21 °C", delta="-1 °C"),"2mn":st.metric(value="18 °C", delta="-3 °C"),"3mn":st.metric(value="16 °C", delta="-2 °C"),"4mn":st.metric(value="15 °C", delta="-1 °C"),"5mn":st.metric(value="15 °C"),"6mn":st.metric(value="14 °C", delta="-1 °C"),"7mn":st.metric(value="12 °C", delta="-2 °C"),"8mn":st.metric(value="12 °C")
+    "0mn":"22","1mn":"21","2mn":"18","3mn":"16","4mn":"15","5mn":"15","6mn":"14","7mn":"12","8mn":"12"
 }
 
 avions=["tbm 900", "tbm 940","tbm 960"]
@@ -50,4 +50,8 @@ st.divider()
 st.subheader("Température à l'altitude de l'avion au cours du vol en degrés Celsius")
 
 time_temp=st.slider(label="Selectionner le temps lors du vol",options=["0mn","1mn","2mn","3mn","4mn","5mn","6mn","7mn","8mn"])
-st.write(temp_time_dict[time_temp])
+old_time_temp = time_temp
+st.metric(label="Température au niveau de l'avion à ce moment",value=str(temp_time_dict[time_temp])+" °C")
+while time_temp !=old_time_temp:
+    st.metric(label="Température au niveau de l'avion à ce moment",value=str(temp_time_dict[time_temp])+" °C", delta=str(temp_time_dict[time_temp]-temp_time_dict[old_time_temp])+" °C")
+    old_time_temp = time_temp
